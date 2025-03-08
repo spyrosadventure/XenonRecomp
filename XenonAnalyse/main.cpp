@@ -253,11 +253,11 @@ int main(int argc, char** argv)
     uint32_t absoluteSwitch[] =
     {
         PPC_INST_LIS,
-        PPC_INST_ADDI,
         PPC_INST_RLWINM,
+        PPC_INST_SUBI,
         PPC_INST_LWZX,
         PPC_INST_MTCTR,
-        PPC_INST_BCTR,
+        PPC_INST_BCTR
     };
 
     uint32_t computedSwitch[] =

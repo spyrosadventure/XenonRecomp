@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\XenonRecomp\CMakeFiles\57c4853543db992f50c994f282a8c3d7\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B79CABDB-B4FB-3DD4-BB2C-4FFA644A452C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
