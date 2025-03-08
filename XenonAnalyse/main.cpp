@@ -29,7 +29,7 @@ void ReadTable(Image& image, SwitchTable& table)
     ppc::Disassemble(code, table.base, insn);
     pOffset = insn.operands[1] << 16;
 
-    ppc::Disassemble(code + 1, table.base + 4, insn);
+    ppc::Disassemble(code + 2, table.base + 4, insn);
     pOffset += insn.operands[2];
 
     if (table.type == SWITCH_ABSOLUTE)
@@ -254,7 +254,7 @@ int main(int argc, char** argv)
     {
         PPC_INST_LIS,
         PPC_INST_RLWINM,
-        PPC_INST_SUBI,
+        PPC_INST_ADDI,
         PPC_INST_LWZX,
         PPC_INST_MTCTR,
         PPC_INST_BCTR
