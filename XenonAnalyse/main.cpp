@@ -35,7 +35,12 @@ void ReadTable(Image& image, SwitchTable& table)
     if (table.type == SWITCH_BYTEOFFSET || table.type == SWITCH_COMPUTED)
     {
         ppc::Disassemble(code + 1, table.base + 4, insn);
-        pOffset = insn.operands[2];
+        pOffset += insn.operands[2];
+    }
+    else
+    {
+        ppc::Disassemble(code + 2, table.base + 0x08, insn);
+        pOffset += insn.operands[2];
     }
 
     if (table.type == SWITCH_ABSOLUTE)
